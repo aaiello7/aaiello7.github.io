@@ -1,17 +1,82 @@
-* {
-  margin:0px;
-  padding:0px;
+html {
+    margin: 0;
+    padding: 0;
 }
-
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
 }
-
+h1 {
+    font-size: 15pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+h1 span {
+    border: 4px outset #20bcd5;
+    padding: 10px;
+}
 p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+    font-size: 12pt;
+    padding: 0;
+    margin: 0;
+}
+.section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 25px;    
+}
+.img-circle {
+    border: 3px solid white;
+    border-radius: 25%;
+}
+#header {
+    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+    background-size: cover;
+}
+#header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+#header p {
+    font-size: 10pt;
+    color: #3b464c;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+#header a {
+    text-decoration:none;
+    font-size: 12pt;
+    color: #3b464c;
+    padding-top: 0;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    
+}
+table {
+    width: 75%;
+}
+table, th, td {
+    border: 1px hidden #cecece;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+}
+.img-container {
+    border: 3px solid white;
+    border-radius: 25%;
+    text-align: justify;
+    position: absolute;
+    height: 150px;
+    width: 100px;
 }
