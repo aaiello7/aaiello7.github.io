@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>JAMBOX Design & Development</title>
+		<meta name="keywords" content="jambox, web, webdesign, webdevelopment, appdevelopment, appsdevelopment, programmers, programming, ui, ux">
+		<meta name="description" content="">
+
+		<!-- Material Design components and Google Icons -->
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+  	<body>
+	  	<header class="mdc-elevation--z1 hero">
+	  		<img class="mdc-elevation--z8 hero-logo" src="https://i.ibb.co/WtDn2m2/JAMBox-text-logo.png" alt="logo">
+	  	</header>
+	  	<!-----TAB BAR Menu----->
+	  	<section>
+			<div class="mdc-tab mdc-tab-bar mdc-tab--with-icon-and-text">
+				<div class="mdc-tab-scroller__scroll-area">
+					<div class="mdc-tab-scroller__scroll-content">
+						<button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true">
+						  <span class="mdc-tab__content">
+						    <span class="mdc-tab__icon material-icons" aria-hidden="true">home</span>
+						    <span class="mdc-tab__text-label">Home</span>
+						  </span>
+						  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+						    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+						  </span>
+						  <span class="mdc-tab__ripple"></span>
+						</button>
+						<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+						  <span class="mdc-tab__content">
+						    <span class="mdc-tab__icon material-icons" aria-hidden="true">edit</span>
+						    <span class="mdc-tab__text-label">Work</span>
+						  </span>
+						  <span class="mdc-tab-indicator">
+						    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+						  </span>
+						  <span class="mdc-tab__ripple"></span>
+						</button>
+						<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
+						  <span class="mdc-tab__content">
+						    <span class="mdc-tab__icon material-icons" aria-hidden="true">phone</span>
+						    <span class="mdc-tab__text-label">Contact</span>
+						  </span>
+						  <span class="mdc-tab-indicator">
+						    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+						  </span>
+						  <span class="mdc-tab__ripple"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-----FAB----->
+			<button class="mdc-fab fab-custom" aria-label="Game">
+			  <span class="mdc-fab__icon material-icons">videogame_asset</span>
+			</button>
+	  	</section>
+	  </br>
+	  	<main>
+		  	<!-----What we do----->
+	  		<section class="main-bg ">
+	  			<h1 class="mdc-theme--on-surface">.what we do</h1>
+	  			<p>Lorem ipsum dolor sit posuere.</p>
+	  				<!-----Buttons bar--->
+	  				<div class="mdc-layout-grid mdc-elevation--z4 elevation-rect">
+	  					<div class="mdc-layout-grid__inner inner-grid-mod">
+	  						<div class="mdc-layout__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-middle grid-cell-mod">
+	  							<figure class="mdc-elevation--z8 rect-1">
+	  								
+	  							</figure>
+			  					<button class="mdc-button mdc-theme--secondary bold-button">
+			  						<span class="mdc-button__label"><h2>.web</h2></span>
+			  					</button>
+	  						</div>
+	  						<div class="mdc-layout__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-middle grid-cell-mod">
+	  							<figure class="mdc-elevation--z8 rect-2">
+	  								
+	  							</figure>
+			  					<button class="mdc-button mdc-theme--secondary bold-button">
+			  						<span class="mdc-button__label"><h2>.design</h2></span>
+			  					</button>
+
+	  						</div>
+	  						<div class="mdc-layout__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-middle grid-cell-mod">
+	  							<figure class="mdc-elevation--z8 rect-3">
+	  								
+	  							</figure>	  							
+			  					<button class="mdc-button mdc-theme--secondary bold-button">
+			  						<span class="mdc-button__label"><h2>.develop</h2></span>
+			  					</button>
+	  						</div>	  						
+	  					</div>
+	  				</div>
+	  		</section>
+	  		<!-----Web----->
+	  		<section class="main-bg">
+	  			<h1 class="mdc-theme--on-surface">.web</h1>
+	  		</section>
+	  		<!-----Design----->
+	  		<section class="main-bg">
+	  			<h1 class="mdc-theme--on-surface">.design</h1>
+	  		</section>
+	  		<!-----Develop----->
+	  		<section class="main-bg">
+	  			<h1 class="mdc-theme--on-surface">.develop</h1>
+	  		</section>
+	  		<!-----Contact----->
+	  		<section class="main-bg">
+	  			
+	  		</section>
+	  	</main>
+  	</body>
+</html>
