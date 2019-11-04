@@ -7,111 +7,93 @@
 		<meta name="description" content="">
 
 		<!-- Material Design components and Google Icons -->
-		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 	</head>
   	<body>
+			<div id="home"></div>
 	  	<header class="mdc-elevation--z1 hero">
 	  		<img class="mdc-elevation--z8 hero-logo" src="https://i.ibb.co/WtDn2m2/JAMBox-text-logo.png" alt="logo">
 	  	</header>
 	  	<!-----TAB BAR Menu----->
-	  	<section>
-			<div class="mdc-tab mdc-tab-bar mdc-tab--with-icon-and-text">
-				<div class="mdc-tab-scroller__scroll-area">
-					<div class="mdc-tab-scroller__scroll-content">
-						<button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true">
-						  <span class="mdc-tab__content">
-						    <span class="mdc-tab__icon material-icons" aria-hidden="true">home</span>
-						    <span class="mdc-tab__text-label">Home</span>
-						  </span>
-						  <span class="mdc-tab-indicator mdc-tab-indicator--active">
-						    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-						  </span>
-						  <span class="mdc-tab__ripple"></span>
-						</button>
-						<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
-						  <span class="mdc-tab__content">
-						    <span class="mdc-tab__icon material-icons" aria-hidden="true">edit</span>
-						    <span class="mdc-tab__text-label">Work</span>
-						  </span>
-						  <span class="mdc-tab-indicator">
-						    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-						  </span>
-						  <span class="mdc-tab__ripple"></span>
-						</button>
-						<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
-						  <span class="mdc-tab__content">
-						    <span class="mdc-tab__icon material-icons" aria-hidden="true">phone</span>
-						    <span class="mdc-tab__text-label">Contact</span>
-						  </span>
-						  <span class="mdc-tab-indicator">
-						    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
-						  </span>
-						  <span class="mdc-tab__ripple"></span>
-						</button>
-					</div>
-				</div>
+	  	<nav>
+			<div class="menu-bar">
+				<a href="#home" class="menu-tab" role="tab" tabindex="1" aria-selected="true">
+				    <span class="material-icons">home</span> <span>Home</span>
+				</a>
+				<a href="#work" class="menu-tab" role="tab" tabindex="2" aria-selected="true">
+				    <span class="material-icons">edit</span> <span>Work</span>
+				</a>
+				<a href="#contact" class="menu-tab" role="tab" tabindex="3" aria-selected="true">
+				    <span class="material-icons">phone</span> <span>contact</span>
+				</a>
+<!-- 					<button class="mdc-tab mdc-tab--active" role="tab"  aria-selected="true">
+				  <span class="mdc-tab__content">
+				    <span class="mdc-tab__icon material-icons" aria-hidden="true">edit</span>
+				    <span class="mdc-tab__text-label">Work</span>
+				  </span>
+				  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+				    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+				  </span>
+				  <span class="mdc-tab__ripple"></span>
+				</button> -->
 			</div>
-			<!-----FAB----->
-			<button class="mdc-fab fab-custom" aria-label="Game">
-			  <span class="mdc-fab__icon material-icons">videogame_asset</span>
-			</button>
-	  	</section>
+				<!-----FAB----->
+				<button class="mdc-fab fab-custom" aria-label="Game">
+			  <span class="fab-icon">videogame_asset</span>
+				</button>
+	  	</nav>
 	  </br>
 	  	<main>
 		  	<!-----What we do----->
-	  		<section class="main-bg ">
+	  		<article id="work" class="main-bg ">
 	  			<h1 class="mdc-theme--on-surface">.what we do</h1>
 	  			<p>Lorem ipsum dolor sit posuere.</p>
 	  				<!-----Buttons bar--->
-	  				<div class="mdc-layout-grid mdc-elevation--z4 elevation-rect">
-	  					<div class="mdc-layout-grid__inner inner-grid-mod">
-	  						<div class="mdc-layout__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-middle grid-cell-mod">
-	  							<figure class="mdc-elevation--z8 rect-1">
-	  								
-	  							</figure>
-			  					<button class="mdc-button mdc-theme--secondary bold-button">
-			  						<span class="mdc-button__label"><h2>.web</h2></span>
-			  					</button>
-	  						</div>
-	  						<div class="mdc-layout__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-middle grid-cell-mod">
-	  							<figure class="mdc-elevation--z8 rect-2">
-	  								
-	  							</figure>
-			  					<button class="mdc-button mdc-theme--secondary bold-button">
-			  						<span class="mdc-button__label"><h2>.design</h2></span>
-			  					</button>
-
-	  						</div>
-	  						<div class="mdc-layout__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-middle grid-cell-mod">
-	  							<figure class="mdc-elevation--z8 rect-3">
-	  								
-	  							</figure>	  							
-			  					<button class="mdc-button mdc-theme--secondary bold-button">
-			  						<span class="mdc-button__label"><h2>.develop</h2></span>
-			  					</button>
-	  						</div>	  						
-	  					</div>
-	  				</div>
-	  		</section>
+	  				<nav class="mdc-layout-grid mdc-elevation--z4 elevation-rect">
+							<a href="#web" class="mdc-elevation--z8 rect-1">
+								<span class="a-text">.web</span>
+	  					</a>
+							<a href="#design" class="mdc-elevation--z8 rect-2">
+	  						<span>.design</span>
+	  					</a>
+							<a href="#develop" class="mdc-elevation--z8 rect-3">
+	  						<span>.develop</span>
+	  					</a>
+	  				</nav>
+	  		</article>
 	  		<!-----Web----->
-	  		<section class="main-bg">
-	  			<h1 class="mdc-theme--on-surface">.web</h1>
-	  		</section>
+	  		<article id="web" class="main-bg">
+	  			<h2 class="mdc-theme--on-surface">.web</h2>
+	  		</article>
 	  		<!-----Design----->
-	  		<section class="main-bg">
-	  			<h1 class="mdc-theme--on-surface">.design</h1>
-	  		</section>
+	  		<article id="design" class="main-bg">
+	  			<h2 class="mdc-theme--on-surface">.design</h2>
+	  		</article>
 	  		<!-----Develop----->
-	  		<section class="main-bg">
-	  			<h1 class="mdc-theme--on-surface">.develop</h1>
-	  		</section>
+	  		<article id="develop" class="main-bg">
+	  			<h2 class="mdc-theme--on-surface">.develop</h2>
+	  		</article>
 	  		<!-----Contact----->
-	  		<section class="main-bg">
-	  			
-	  		</section>
+	  		<article id="contact" class="main-bg contact">
+					<section>
+						<h2 class="mdc-theme--on-surface">.lets work together</h2>
+					</section>
+					<section>
+						<h2 class="mdc-theme--on-primary">.social network</h2>
+					</section>
+					<section>
+						<h2 class="mdc-theme--on-secondary">.reach us</h2>
+					</section>
+	  		</article>
 	  	</main>
+			<footer>
+					<section class="orgline">
+						<h2>JAMbox</h2>
+						<p class="disclosure">All rights reserved JAMBOX Design & Development 2019</p>
+					</section>
+			</footer>
   	</body>
 </html>
