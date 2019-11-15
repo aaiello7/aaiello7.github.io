@@ -1,0 +1,50 @@
+body {
+  background: #2D2D2D;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.yeti {
+  display: block;
+  margin: auto;
+  height: 490px;
+  width: 450px;
+  background: url('https://i.ibb.co/GtjvbPz/yetiFull.png') no-repeat left center;
+}
+
+.yeti:hover {
+  animation: smile .1s steps(3) forwards;
+}
+
+.yeti:active {
+  animation: hit .1s steps(3) forwards;
+}
+
+@keyframes smile {
+  from  {background-position: 0px;}
+  to {background-position: -1350px;}
+}
+
+@keyframes hit {
+  from  {background-position: -1800px;}
+  to {background-position: -3150px;}
+}
+/* a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  background: #3D5F94;
+  border-radius: .35em;
+  border-bottom: solid 3px rgba(0,0,0,.2);
+  width: 120px;
+  text-align: center;
+  padding: 10px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+a:hover {
+  background: #5D91D8;
+} */
