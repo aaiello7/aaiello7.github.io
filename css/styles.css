@@ -32,6 +32,11 @@ h1 {
   from  {background-position: -1800px;}
   to {background-position: -3150px;}
 }
+
+section h2 {
+  text-align: center;
+  margin: 0 2%;
+}
 /* a {
   text-decoration: none;
   font-family: sans-serif;
