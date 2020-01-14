@@ -1,24 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Yeti Animation</title>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap and CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>The Yeti</title>
 </head>
 <body>
   <header>
-    <h1>The Lonely Yeti</h1>
-    <div class="yeti"></div>
+    <img class="hero-img" src="images/header-bg.png" alt="header background">
   </header>
-  <hr>
-  <main>
-    <section>
-      <h1>Go to Proyects</h1>
-      <h2><a href="TheNews/index.html" style="color:white;">TheNews</a></h2>
-      <h2><a href="ejercicio09/index.html" style="color:white;">Web de Prueba</a></h2>
-      <h2><a href="proyectoFinal_CSS/index.html" style="color:white;">Proyecto Final CSS</a></h2>
-    </section>
-  </main>
-
+  <!-- Solid Centered -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container nav-custom col-xl-6 col-m-4 col-s-12">
+      <a class="nav-item nav-link nav-text active" href="#">About <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link nav-text" href="#">Work</a>
+      <a class="nav-item nav-link nav-text" href="#contact">Contact</a>
+    </div>
+  </nav>
+  <!-- Sticky Navigation bar -->
+  <!-- <nav class="navbar sticky-top bg-light nav-appear">
+  <a class="navbar-brand" href="#"><img src="images/avatar/yeti-happy.png" alt="yeti-logo" class="navbar-logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class"navbar-nav navbar-box">
+<a class="primary-text-color nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+<a class="primary-text-color nav-item nav-link" href="#">Work</a>
+<a class="primary-text-color nav-item nav-link" href="#">Contact</a>
+</div>
+</nav> -->
+<!-- Bootstrap Navbar -->
+<!-- <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+<a class="navbar-brand col-2" href="#"><img src="images/avatar/yeti-happy.png" alt="yeti-logo" class="navbar-logo"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+<div class="navbar-nav justified-content-end">
+<a class="nav-item nav-link nav-text active" href="#">About <span class="sr-only">(current)</span></a>
+<a class="nav-item nav-link nav-text " href="#">Work</a>
+<a class="nav-item nav-link nav-text " href="#">Contact</a>
+</div>
+</div>
+</nav> -->
+<section>
+  <!-- Line left -->
+  <div class="col-4 float-item vertical-center">
+    <svg viewBox="0 0 283 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-60.000000, -578.000000)" fill="#3D5F94" fill-rule="nonzero">
+          <path id="Line-2" d="M69.5,578 C74.2362995,578 78.1630678,581.466015 78.8822464,585.999988 L343,586 L343,589 L78.8820878,589.001011 C78.1624908,593.534494 74.2359516,597 69.5,597 C64.2532949,597 60,592.746705 60,587.5 C60,582.253295 64.2532949,578 69.5,578 Z M69.5,581 C65.9101491,581 63,583.910149 63,587.5 C63,591.089851 65.9101491,594 69.5,594 C73.0898509,594 76,591.089851 76,587.5 C76,583.910149 73.0898509,581 69.5,581 Z"></path>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <img class="img-container col-4 float-item" src="images/avatar/yeti-happy.png" alt="hit animation">
+  <!-- Line right -->
+  <div class="col-4 float-item vertical-center">
+    <svg viewBox="0 0 283 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-680.000000, -578.000000)" fill="#3D5F94" fill-rule="nonzero">
+          <path id="Line-2" d="M953.5,578 C958.746705,578 963,582.253295 963,587.5 C963,592.746705 958.746705,597 953.5,597 C948.764048,597 944.837509,593.534494 944.117912,589.001011 L680,589 L680,586 L944.117754,585.999988 C944.836932,581.466015 948.7637,578 953.5,578 Z M953.5,581 C949.910149,581 947,583.910149 947,587.5 C947,591.089851 949.910149,594 953.5,594 C957.089851,594 960,591.089851 960,587.5 C960,583.910149 957.089851,581 953.5,581 Z"></path>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="col-xl-8 col-md-10 col-sm-12 clear-item mx-auto">
+    <p>This is a little piece of my work. I’ll show you some of the things that I like to do</p>
+  </div>
+</section>
+<!-- Design page -->
+<section>
+  <figure class="container col-xl-6 col-md-6 col-sm-12 mx-auto float-item vertical-center">
+    <div>
+      <img class="img-container col-4 float-item" src="images/icons/pencil.png" alt="draw">
+      <img class="img-container col-4 img-up float-item" src="images/icons/bulb.png" alt="imagine">
+      <img class="img-container col-4 float-item" src="images/icons/rocket.png" alt="launch">
+    </div>
+    <img class="img-container col-xl-6 col-md-6 col-sm-10" src="images/avatar/yeti-anima-up.png" alt="avatar">
+  </figure>
+  <div class="container col-xl-6 col-md-6 col-sm-12 float-item vertical-center">
+    <h1>Design</h1>
+    <p>From skecthing your ideas, to complete interactive mock-ups.</p>
+  </div>
+</section>
+<!-- Develop page -->
+<section>
+  <div class="container col-xl-6 col-md-6 col-sm-12 float-item vertical-center">
+    <h1>Develop</h1>
+    <p>Code your web to make it come to life and be accesible across platforms.</p>
+  </div>
+  <figure class="container col-xl-6 col-md-6 col-sm-12 mx-auto float-item vertical-center">
+    <img class="img-container col-xl-6 col-md-6 col-sm-10" src="images/avatar/yeti-anima-down.png" alt="avatar">
+    <div>
+      <img class="img-container col-4 float-item" src="images/icons/code.png" alt="code">
+      <img class="img-container img-dwn col-4 float-item" src="images/icons/gear.png" alt="gear">
+      <img class="img-container col-4 float-item" src="images/icons/responsive.png" alt="responsive">
+    </div>
+  </figure>
+</section>
+<!-- Call to action -->
+<section id="contact">
+  <h1>Lets work together!</h1>
+  <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, dignissimos!</p>
+  <figure class="container col-xl-6 col-lg-8 col-md-10 col-sm-12 mx-auto">
+    <img class="img-container col-3"src="images/icons/mail.png" alt="mail">
+    <img class="img-container col-3"src="images/icons/ig.png" alt="instagram">
+    <img class="img-container col-3"src="images/icons/web.png" alt="web">
+  </figure>
+</section>
+<footer class="dark-primary-color">
+  <p class="light-primary-color">&copy; Andres Aiello. All rights reserved 2020.</p>
+</footer>
+<!-- Bootstrap scripts   -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

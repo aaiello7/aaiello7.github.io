@@ -1,0 +1,41 @@
+body {
+  background: #2D2D2D;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#play:target {
+  animation: smile 2s steps(4, end) forwards;
+}
+
+.yeti {
+  display: block;
+  margin: auto;
+  height: 490px;
+  width: 450px;
+  background: url('https://i.ibb.co/zVch8Zb/yeti-Animation.png') left center;
+}
+
+@keyframes smile {
+  from {background-position: 0px;}
+  to {background-position: -1800px;}
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  background: #3D5F94;
+  border-radius: .35em;
+  border-bottom: solid 3px rgba(0,0,0,.2);
+  margin: 10px auto;
+  width: max-content;
+  padding: 10px 10px;
+  display: block;
+}
+a:hover {
+  background: firebrick;
+}
