@@ -120,11 +120,17 @@ p {
 
 /* Animated sections */
 section {
+  display: inline-block;
+  margin: 5%;
   clear: both;
-  margin: 10%;
 }
 
 .img-container {
+  padding: 0;
+  float: left;
+}
+
+.big-img-container {
   padding: 0;
 }
 
@@ -136,16 +142,19 @@ section {
   top: 80px;
 }
 
-.float-item {
+.img-centered{
+  padding: 7% 0;
   float: left;
 }
 
-.clear-item {
-  clear: both;
+.textbox-centered {
+  padding: 15% 0;
+  float: left;
 }
 
-.vertical-center {
-  padding: 15% 0;
+.block-element {
+  margin: 5%;
+  clear: both;
 }
 
 .divider {
