@@ -125,6 +125,11 @@ section {
   clear: both;
 }
 
+.sm-img-container {
+  padding: 5%;
+  float: left;
+}
+
 .img-container {
   padding: 0;
   float: left;
