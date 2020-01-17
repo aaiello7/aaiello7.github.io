@@ -125,6 +125,17 @@ section {
   clear: both;
 }
 
+.textbox-centered {
+  padding: 15% 0;
+  float: left;
+}
+
+.block-element {
+  margin: 5%;
+  clear: both;
+}
+
+/* Images */
 .sm-img-container {
   padding: 5%;
   float: left;
@@ -152,16 +163,7 @@ section {
   float: left;
 }
 
-.textbox-centered {
-  padding: 15% 0;
-  float: left;
-}
-
-.block-element {
-  margin: 5%;
-  clear: both;
-}
-
+/* Footer and dividers */
 .divider {
   border-bottom: 0.7vw dotted #e3eaf4;
 }
