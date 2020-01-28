@@ -107,7 +107,7 @@ h3 {
 .flag {
   float: left;
   max-width: 10%;
-  height: 8vw; //not displaying correctly on safari ???
+  height: 8vw; /*not displaying correctly on safari ??? */
   padding: 3%;
   visibility: hidden;
 }
