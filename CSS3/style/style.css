@@ -103,7 +103,10 @@ nav {
 
 .menu {
   margin: 0 8.35%;
-  clear: both;
+}
+
+.menu-link {
+  padding: 2% 9%;
 }
 
 nav a, nav p {
@@ -127,14 +130,18 @@ nav a:hover{
 }
 
 /* Main */
-main h1 {
+a.text-link {
+  float: right;
+}
+
+h1 {
   font-family: roboto;
   font-size: 3vw;
   font-weight: 400;
   color: slategray;
   margin-bottom: 5%;
 }
-main h2 {
+h2 {
   font-family: roboto;
   font-size: 2vw;
   font-weight: normal;
@@ -179,7 +186,7 @@ section p, section a{
   padding-right: 5%;
 }
 
-.featured img {
+.featured-img {
   border: 1px solid #f2f2f2;
 }
 
@@ -210,7 +217,7 @@ section p, section a{
   clear: both;
 }
 
-.project-card img {
+.project-img {
   background-size: cover;
   margin: 3%;
 }
@@ -280,5 +287,73 @@ footer p {
 /* Styling for mobile screens */
 @media screen and (max-width: 500px) {
   body {
+  }
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+
+  /* Fonts styling */
+  section p, section a{
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    color: slategray;
+    text-align: center;
+    margin: 5% 0;
+  }
+
+  h2 {
+    font-family: roboto;
+    font-size: 4vw;
+    font-weight: normal;
+    color: slategray;
+  }
+
+  /* Menu */
+  .menu {
+    margin: 0;
+    text-align: center;
+  }
+  .menu-link {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  nav p {
+    visibility: hidden;
+  }
+
+  /* Cards section */
+  .bubble {
+    float: right;
+  }
+
+  /* Images */
+  .featured-img {
+    margin: 5% auto;
+    padding: 5%;
+    border: none;
+    clear: both;
+  }
+
+  /* Projects section */
+  .project-img {
+    margin: 3% 25%;
+  }
+  /* Formulario contacto */
+
+  input[type=text], input[type=submit], .sm-form {
+    margin: 2% 15%;
   }
 }

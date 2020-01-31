@@ -13,12 +13,22 @@
     <img class="slogan-img col-9" src="../MATERIAL/subtitle.png" alt="UX Specialists">
   </header>
   <nav class="col-12">
-    <div class="menu col-10">
-      <a href="../index.html">Inicio</a><p>&sim;</p>
-      <a href="http://cipsa.net">CIPSA</a><p>&sim;</p>
-      <a href="../servicios/servicios.html">Servicios</a><p>&sim;</p>
-      <a href="../proyectos/proyectos.html">Proyectos</a><p>&sim;</p>
-      <a id="current" href="#contact">Contacto</a><p>&nbsp;</p>
+    <div class="menu col-10 col-sm-12">
+      <div class="menu-link col-2 col-sm-12">
+        <a href="../index.html">Inicio</a>
+      </div>
+      <div class="menu-link col-2 col-sm-12">
+        <a href="http://cipsa.net">CIPSA</a>
+      </div>
+      <div class="menu-link col-2 col-sm-12">
+        <a href="../servicios/servicios.html">Servicios</a>
+      </div>
+      <div class="menu-link col-2 col-sm-12">
+        <a href="../proyectos/proyectos.html">Proyectos</a>
+      </div>
+      <div class="menu-link col-2 col-sm-12">
+        <a id="current" href="../contacto/contacto.html">Contacto</a>
+      </div>
     </div>
   </nav>
   <main id="contact" class="text-margin col-12">
@@ -27,12 +37,12 @@
       <p>Póngase en contacto con nosotros mediante el siguiente formulario</p>
       <form class="col-12" action="php/contact.php" method="get">
         <label for="fname">Nombre</label>
-        <input class="col-5" type="text" id="fname" name="firstname" placeholder="Nombre" maxlength="30" size="30">
+        <input class="col-5 col-sm-8" type="text" id="fname" name="firstname" placeholder="Nombre" maxlength="30" size="30">
         <label for="email">Email</label>
-        <input class="col-5" type="text" id="email" name="email" placeholder="Email" maxlength="30" size="30">
+        <input class="col-5 col-sm-8" type="text" id="email" name="email" placeholder="Email" maxlength="30" size="30">
         <label for="issue">Issue</label>
-        <input class="col-5" type="text" id="issue" name="issue" placeholder="Asunto" maxlength="30" size="30">
-        <textarea class="col-6" name="message" rows="8" cols="40"></textarea>
+        <input class="col-5 col-sm-8" type="text" id="issue" name="issue" placeholder="Asunto" maxlength="30" size="30">
+        <textarea class="sm-form col-6 col-sm-8" name="message" rows="8" cols="40"></textarea>
         <input class="bubble col-3" type="submit" value="Enviar &#x226B;">
       </form>
     </section>
