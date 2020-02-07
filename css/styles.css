@@ -169,6 +169,7 @@ section {
 }
 
 footer {
-  margin-top: 5%;
+  margin: 5%;
+  
   clear: both;
 }

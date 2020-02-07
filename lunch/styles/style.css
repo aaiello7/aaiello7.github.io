@@ -1,0 +1,438 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Start of CSS Customization */
+/* Styling for wide screens */
+
+body {
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.hero-img {
+  /* background-image: url("../images/pictures/lunch-neon-sign.png"); */
+  background-color: #363636;
+  background-size: contain;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* Text customization */
+h1, h2, h3, p, a {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #0070cc;
+  margin: 4% 0;
+}
+
+p {
+  color: #677898;
+  font-weight: 400;
+  font-size: 0.9em;
+  font-style: normal;
+  letter-spacing: 0em;
+  line-height: 2;
+  text-transform: none;
+}
+
+h3 {
+  color: #fff;
+}
+
+nav a {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.7em;
+  letter-spacing: 0em;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navbar Customization */
+.navbar {
+  position: sticky;
+  background-color: black;
+  text-align: center;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-home a {
+  color: black;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: .2s ease;
+  background-color: #171717;
+}
+
+.navbar:hover .overlay {
+  opacity: 0.7;
+}
+
+.nav-wrapper {
+  padding: 1% 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 .75em;
+  padding: .618em 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-item:hover {
+  color: red;
+}
+
+.wrapper {
+  margin-top: 2%;
+  padding: 5%;
+}
+
+.left-align {
+  left: 5%;
+}
+
+.right-align {
+  right: 5%;
+}
+
+.right-card{
+  left: 30%;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shadow, .fixed-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* background images */
+.img-box {
+  position: absolute;
+  min-width: 60%;
+  z-index: -1;
+}
+
+.img-bg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  padding: 3% 5%;
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* Menu option */
+.menu {
+  margin: 2% 5%;
+}
+
+.menu-text {
+  padding: 0 2% 0;
+  font-size: 0.7em;
+}
+
+.option-card {
+  margin: 2% 0;
+  padding: 2% 5%;
+  background: #fff;
+  transition: 0.3s;
+}
+.shadow:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.3);
+}
+
+/* Hide default radio button */
+.option-card input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* Custom radio button */
+.checkmark {
+  display: inline-block;
+  position: relative;
+  height: 2vh;
+  width: 2vh;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.option-card .checkmark:after {
+  top: 25%;
+  left: 25%;
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+}
+
+.option-card:hover input ~ .checkmark {
+  transition: 0.5s;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.option-card input:checked ~ .checkmark {
+  background-color: #0070cc;
+}
+
+.option-card input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Resturant card */
+.input-container {
+  padding: 2% 5%;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.restaurant-card {
+  float: left;
+  box-sizing: content-box;
+  margin: 7% 1%;
+  padding: 3%;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.rest-name {
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0 15%;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.icon-set {
+  position: relative;
+  display: flex;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.icon {
+  max-width: 5%;
+  margin: 0 1%;
+}
+
+/* Form */
+.button-container {
+  position: absolute;
+  margin: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn {
+  padding: 10% 25%;
+  margin: 12% 0%;
+  border-radius: 300px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  letter-spacing: 0em;
+  color: #eef7ef;
+  background-color: #0a2461;
+  border-color: #0a2461;
+  text-align: center;
+  cursor: pointer;
+  transition: .1s opacity linear;
+}
+
+.btn:hover{
+  background: rgba(10, 36, 97, 0.85);
+  transition: 0.2s;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 9px 2px rgba(45, 132, 212, 0.1);
+}
+
+textarea {
+  width: 50%;
+  position: relative;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  margin-right: 5%;
+}
+
+.input-bubble {
+  text-align: center;
+  color: #0070cc;
+  font-weight: 700;
+  padding: 2% 3%;
+  margin: 0.1em 0.3em;
+  border-color: #0a2461;
+  border-radius: 300px;
+}
+
+/* Footer */
+footer {
+  background-color: #363636;
+  text-align: center;
+  margin: 5% 0 0;
+  padding: 2%;
+  clear: both;
+}
+
+/* Styling for tablet screens */
+@media only screen and (max-width: 800px) {
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+
+  .center-img {
+    right: 8%;
+    left: 8%;
+  }
+
+  .menu {
+    margin: 8%;
+  }
+
+  .right-card {
+    left:0;
+  }
+
+  .hero-img {
+    padding: 10% 0;
+  }
+}
+
+/* Styling for mobile screens */
+@media only screen and (max-width: 500px) {
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+
+  .navbar {
+    position: relative;
+  }
+  .nav-item {
+    margin: 0;
+  }
+
+  .restaurant-card {
+    margin: 7% 16.66%;
+  }
+
+}
