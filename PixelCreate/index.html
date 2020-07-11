@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Pixel Test</title>
+  <link rel="stylesheet" href="style/style.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <img class="hero" src="../../../Media/WAKA_logo.jpeg" alt="WAKA">
+  </header>
+  <nav>
+    <h3>Pixelate</h3>
+  </nav>
+  <main class="container col-12">
+    <section class="col-6 col-sm-12">
+      <!-- Image placeholder -->
+
+      <figure class="img-sqr">
+        <img id="inImg" class="img-sqr in-img" src="" alt="">
+      </figure>
+      <!-- Input form for file select -->
+      <div class="text-center p-2">
+        <label class="bubble m-2">
+          <p>Choose File</p>
+          <input type="file" name="" value="">
+        </label>
+      </div>
+    </section>
+    <section class="col-6 col-sm-12">
+      <!-- Pixelated image output -->
+      <figure class="img-sqr">
+        <canvas id="outputImg" class="out-img" src="" alt=""></canvas>
+      </figure>
+      <!-- Pixel values for output array -->
+      <div class="text-center p-2">
+        <button id="pixelButton" class="bubble bubble-text" type="submit">Pixelate</button>
+      </div>
+    </section>
+  </main>
+  <script src="./scripts/scripts.js" type="text/javascript"></script>
+</body>
+<footer>
+  <p class="footer-text">Waka Design.2020</p>
+</footer>
+
+</html>
