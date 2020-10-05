@@ -2,7 +2,6 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,105 +22,135 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* Start of CSS customization */
-
 body {
   margin: 0;
   padding: 50px;
-  background-color: #F2EBE3;
-  background-image: url(../images/noise.png);
-
+  background-color: white;
+  background-image: url(images/noise.png);
 }
 
 h1 {
-  font-family: 'Proza Libre', sans-serif;
-  font-size: 2em;
+  font-family: 'Kanit', sans-serif;
+  font-size: 5vw;
   font-weight: 700;
 }
 
-svg {
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
+  padding: 1%;
+  margin: 1%;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.image {
   display: block;
-  margin: 50px auto 75px;
+  width: 75%;
+  padding: 5%;
+  margin: auto;
 }
 
-button {
+.icon {
   display: block;
-  margin: 20px auto;
-}
-.custom-btn {
-  padding: 10px 25px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.2em;
-  background: transparent;
-  outline: none !important;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
+  padding: 5%;
+  width: 8%;
+  height: auto;
+  margin: auto;
 }
 
-.btn-anim {
-  width: 150px;
-  height: 50px;
-  line-height: 52px;
-  padding: 0;
-  border: 2px solid #000;
-}
-.btn-anim span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-anim:before {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  background: #000;
-  transition: all 0.3s ease;
-}
-.btn-anim:before {
-  height: 0%;
-  width: 100%;
-}
-.btn-anim:hover:before {
-  height: 100%;
+.text {
+  text-align: center;
+  padding: 2%;
+  margin: 1%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
 
-.btn-anim span:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  background: #000;
-  transition: all 0.3s ease;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .image {
+    width: 50%;
+    padding: 3%;
+  }
+
+  .icon {
+    padding: 5%;
+    width: 7%;
+  }
 }
 
-.btn-anim span:hover {
-  color: #F2EBE3;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .image {
+    width: 30%;
+    padding: 3%;
+  }
+
+  .icon {
+    padding: 4%;
+    width: 5%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .image {
+    width: 20%;
+    padding: 2%;
+  }
+
+  .icon {
+    padding: 3%;
+    width: 3%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .image {
+    width: 20%;
+    padding: 2%;
+  }
+
+  .icon {
+    padding: 2%;
+    width: 3%;
+  }
 }
