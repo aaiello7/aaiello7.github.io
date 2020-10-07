@@ -55,14 +55,14 @@ table {
 /* Start of CSS customization */
 body {
   margin: 0;
-  padding: 50px;
+  padding: 25px;
   background-color: white;
   background-image: url(images/noise.png);
 }
 
 h1 {
-  font-family: 'Kanit', sans-serif;
-  font-size: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7vw;
   font-weight: 800;
 }
 
@@ -81,22 +81,29 @@ h2 {
 
 .container {
   max-width: 100%;
+  padding: 3%;
   margin: auto;
 }
 
 .image {
   display: block;
-  width: 75%;
-  padding: 5%;
+  width: 60%;
+  padding: 9%;
   margin: auto;
 }
 
 .icon {
   display: block;
-  padding: 5%;
+  padding: 2%;
   width: 8%;
   height: auto;
   margin: auto;
+  opacity: 0.6;
+}
+
+.icon:hover {
+  transition: .5s;
+  opacity: 1;
 }
 
 .text {
@@ -111,55 +118,55 @@ h2 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .image {
-    width: 50%;
-    padding: 3%;
+    width: 45%;
+    padding: 4%;
   }
 
   .icon {
-    padding: 5%;
-    width: 7%;
+    padding: 3%;
+    width: 6%;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .image {
-    width: 30%;
-    padding: 3%;
+    width: 25%;
+    padding: 1.5%;
   }
 
   .icon {
-    padding: 4%;
+    padding: 2.5%;
     width: 5%;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .head {
-    text-align: left;
-  }
 
+  /* .head {
+    text-align: left;
+  } */
   .image {
-    width: 20%;
-    padding: 2%;
+    width: 15%;
+    padding: 1%;
   }
 
   .icon {
-    padding: 3%;
+    padding: 1.7%;
     width: 3%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .head {
-    text-align: left;
-  }
 
+  /* .head {
+    text-align: left;
+  } */
   .image {
-    width: 20%;
-    padding: 2%;
+    width: 15%;
+    padding: 1%;
   }
 
   .icon {
